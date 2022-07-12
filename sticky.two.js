@@ -1,6 +1,8 @@
+/* This program positions sticky notes in a board with existing content */
+
 const axios = require("axios").default;
 require("dotenv").config();
-const dupl_data = require("./NEWO");
+const dupl_data = require("./DATA-TWO");
 
 const options = {
   method: 'GET',
@@ -28,6 +30,7 @@ axios.request(options).then((response) => {
     positionObj.x.sort(function(a, b) {
         return b - a;
     });
+    
     console.log(positionObj.x)
 
     let tempX = []

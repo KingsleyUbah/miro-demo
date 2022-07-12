@@ -1,4 +1,4 @@
-/* This program adds sticky notes horizonatally in the same way that the CTRL+D shotcut does in the UI */
+/* This program keeps adding sticky notes horizonatally in the same way that the CTRL+D shotcut does in the UI */
 
 const axios = require("axios").default;
 require("dotenv").config();
